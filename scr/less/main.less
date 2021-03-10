@@ -135,7 +135,7 @@ input:focus, button:focus {
 			margin: 55px 0 35px;
 			padding: 25px 40px;
 
-			background-color: @bcg-1;
+			background-color: @icons;
 
 			color: white;
 			text-align: center;
@@ -781,6 +781,7 @@ footer {
 
 
 //media
+
 @media (max-width: 1230px) {
 	.feedback {
 		.hand {
@@ -788,7 +789,11 @@ footer {
 		}
 	}
 }
+
 @media (max-width: 1199px) {
+	.main { 
+		.header-phone { text-align: right; } 
+	}
 	.price {
 		&-header button {
 			margin-top: 50px;
@@ -840,12 +845,14 @@ footer {
 		.map { margin-top: 0; }
 	}
 }
+
 @media (max-width: 991px) {
 	.main {
 		height: 900px;
 		background-position: top right;
+		.header-button button { right: 0; }
 	}
-	.header-img, .header-phone, .main-content { text-align: center; }
+	.header-img, .header-phone, .main-content { text-align: center !important; }
 	.main-content {
 		margin-top: 30px;
 		h1 {
@@ -907,6 +914,7 @@ footer {
 		}
 	}
 }
+
 @media (max-width: 767px) {
 	.main {
 		height: 920px;
@@ -955,13 +963,17 @@ footer {
 		.footer_logo { margin-bottom: 20px; }
 	}
 }
+
 @media (max-width: 575px) {
 	.main {
-		height: 960px;
+		height: 1060px;
 		background-position: top left;
+		.header { height: auto; }
 	}
 	.main-content {
+		margin-top: 20px;
 		text-align: center;
+		h1 { font-size: 25px; }
 		p {
 			display: block;
 			width: 250px;
@@ -981,8 +993,52 @@ footer {
 		&-slider-btn.feedback-right { transform: translateX(0); }
 		&-slider-btn.feedback-left { left: 50px; }
 	}
+	.scheme {
+		.header { margin: 60px auto; }
+	}
+
+	.fears {
+		.fears_header { margin: 85px auto; }
+	}
+
 	.contacts {
 		&-form { height: auto; }
+	}
+
+	.popup-form { width: auto; }
+}
+
+@media (max-width: 410px) {
+	.main {
+		.main-form { width: auto; }
+	}
+
+	.features {
+		h2 { margin: 50px auto 70px; }
+	}
+
+	.price {
+		padding: 50px 0;
+		.price-header button { width: auto; }
+		.price-card { 
+			padding: 45px 10px;
+			img { max-width: 200px; }
+			}
+	}
+
+	.inclusive {
+		padding: 50px 0;
+		.inclusive-card { max-width: 270px; .center(); }
+	}
+
+	.watch {
+		padding-bottom: 50px;
+		.main-form { width: auto; }
+	}
+
+	.add-services {
+		padding: 60px 0 50px;
+		img { max-width: 270px; }
 	}
 }
 .price {
