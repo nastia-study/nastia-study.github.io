@@ -860,6 +860,9 @@ footer .footer_devs {
   .feedback .hand {
     display: none;
   }
+  .feedback-form_card {
+    padding: 50px 80px;
+  }
   .inclusive {
     text-align: center;
   }
@@ -884,6 +887,9 @@ footer .footer_devs {
   }
   footer .footer_logo {
     margin-bottom: 20px;
+  }
+  .fotorama__nav-wrap {
+    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -918,14 +924,27 @@ footer .footer_devs {
     height: 370px;
     padding: 30px 50px;
   }
+  .feedback {
+    padding-top: 70px;
+  }
+  .feedback-header {
+    margin-bottom: 70px;
+  }
+  .feedback .customer-comment {
+    height: auto;
+  }
   .feedback .hand {
     display: none;
+  }
+  .feedback-slider-btn {
+    width: 40px;
+    height: 40px;
   }
   .feedback-slider-btn.feedback-right {
     transform: translateX(0);
   }
   .feedback-slider-btn.feedback-left {
-    left: 50px;
+    left: 40px;
   }
   .scheme .header {
     margin: 60px auto;
@@ -940,7 +959,7 @@ footer .footer_devs {
     width: auto;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .main .main-form {
     width: auto;
   }
@@ -958,6 +977,19 @@ footer .footer_devs {
   }
   .price .price-card img {
     max-width: 200px;
+  }
+  .feedback-slider-btn {
+    height: 30px;
+    width: 30px;
+  }
+  .feedback-slider-btn.feedback-left {
+    left: 30px;
+  }
+  .feedback .feedback-form_card {
+    padding: 50px 40px;
+  }
+  .feedback .feedback-form_card button {
+    width: 200px;
   }
   .inclusive {
     padding: 50px 0;
