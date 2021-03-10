@@ -88,7 +88,7 @@ button:focus {
   width: 220px;
   margin: 55px 0 35px;
   padding: 25px 40px;
-  background-color: #286b0a;
+  background-color: #70c849;
   color: white;
   text-align: center;
   font-family: 'ProximaNova-reg', sans-serif;
@@ -694,6 +694,9 @@ footer .footer_devs {
   }
 }
 @media (max-width: 1199px) {
+  .main .header-phone {
+    text-align: right;
+  }
   .price-header button {
     margin-top: 50px;
   }
@@ -752,10 +755,13 @@ footer .footer_devs {
     height: 900px;
     background-position: top right;
   }
+  .main .header-button button {
+    right: 0;
+  }
   .header-img,
   .header-phone,
   .main-content {
-    text-align: center;
+    text-align: center !important;
   }
   .main-content {
     margin-top: 30px;
@@ -874,11 +880,18 @@ footer .footer_devs {
 }
 @media (max-width: 575px) {
   .main {
-    height: 960px;
+    height: 1060px;
     background-position: top left;
   }
+  .main .header {
+    height: auto;
+  }
   .main-content {
+    margin-top: 20px;
     text-align: center;
+  }
+  .main-content h1 {
+    font-size: 25px;
   }
   .main-content p {
     display: block;
@@ -906,8 +919,58 @@ footer .footer_devs {
   .feedback-slider-btn.feedback-left {
     left: 50px;
   }
+  .scheme .header {
+    margin: 60px auto;
+  }
+  .fears .fears_header {
+    margin: 85px auto;
+  }
   .contacts-form {
     height: auto;
+  }
+  .popup-form {
+    width: auto;
+  }
+}
+@media (max-width: 410px) {
+  .main .main-form {
+    width: auto;
+  }
+  .features h2 {
+    margin: 50px auto 70px;
+  }
+  .price {
+    padding: 50px 0;
+  }
+  .price .price-header button {
+    width: auto;
+  }
+  .price .price-card {
+    padding: 45px 10px;
+  }
+  .price .price-card img {
+    max-width: 200px;
+  }
+  .inclusive {
+    padding: 50px 0;
+  }
+  .inclusive .inclusive-card {
+    max-width: 270px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .watch {
+    padding-bottom: 50px;
+  }
+  .watch .main-form {
+    width: auto;
+  }
+  .add-services {
+    padding: 60px 0 50px;
+  }
+  .add-services img {
+    max-width: 270px;
   }
 }
 .price {
