@@ -83,6 +83,14 @@ button {
 input:focus, button:focus {
 	outline: none;
 }
+iframe {
+	width: 100%;
+	height: 190px;
+	border:0;
+	aria-hidden: false;
+	tabindex: 0;
+	frameborder: 0;
+}
 
 //typography
 
@@ -936,6 +944,7 @@ footer {
 	}
 	.feedback {
 		.hand { display: none; }
+		&-form_card { padding: 50px 80px; }
 	}
 	.inclusive {
 		text-align: center;
@@ -962,6 +971,8 @@ footer {
 		text-align: center;
 		.footer_logo { margin-bottom: 20px; }
 	}
+
+	.fotorama__nav-wrap { display: none; }
 }
 
 @media (max-width: 575px) {
@@ -989,9 +1000,16 @@ footer {
 		padding: 30px 50px;
 	}
 	.feedback {
+		padding-top: 70px;
+		&-header { margin-bottom: 70px; }
+		.customer-comment { height: auto; }
 		.hand { display: none; }
+		&-slider-btn {
+			width: 40px;
+			height: 40px;
+		}
 		&-slider-btn.feedback-right { transform: translateX(0); }
-		&-slider-btn.feedback-left { left: 50px; }
+		&-slider-btn.feedback-left { left: 40px; }
 	}
 	.scheme {
 		.header { margin: 60px auto; }
@@ -1008,7 +1026,7 @@ footer {
 	.popup-form { width: auto; }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 420px) {
 	.main {
 		.main-form { width: auto; }
 	}
@@ -1023,6 +1041,18 @@ footer {
 		.price-card { 
 			padding: 45px 10px;
 			img { max-width: 200px; }
+			}
+	}
+
+	.feedback {
+		&-slider-btn {
+			height: 30px;
+			width: 30px;
+		}
+		&-slider-btn.feedback-left { left: 30px; }
+		.feedback-form_card { 
+			padding: 50px 40px;
+			button { width: 200px; }
 			}
 	}
 
