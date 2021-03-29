@@ -561,7 +561,7 @@
 	<div class="popup popup-callback">
 		<!-- <div class="container"> -->
 			<div class="popup__form">
-				<button class="popup__close"><p>&#735;</p></button>
+				<button class="popup__close">&#735;</button>
 				<form action="#">
 					<h3>Введите ваши данные и нажмите заказать</h3>
 					<input type="text" placeholder="Введите имя">
@@ -575,7 +575,7 @@
 
 	<div class="popup popup-order">
 		<div class="popup__form">
-			<button class="popup__close"><p>&#735;</p></button>
+			<button class="popup__close">&#735;</button>
 			<form action="#">
 				<h3>Введите ваши данные и нажмите заказать</h3>
 				<input type="text" placeholder="Введите имя">
@@ -588,7 +588,7 @@
 
 	<div class="popup popup-complectation">
 		<div class="popup__form">
-			<button class="popup__close"><p>&#735;</p></button>
+			<button class="popup__close">&#735;</button>
 			<form action="#">
 				<h3>Введите ваши данные и нажмите заказать</h3>
 				<input type="text" placeholder="Введите имя">
@@ -602,7 +602,7 @@
 
 	<div class="popup popup-questions">
 		<div class="popup__form">
-			<button class="popup__close"><p>&#735;</p></button>
+			<button class="popup__close">&#735;</button>
 			<form action="#">
 				<h3>Оставьте заявку мы свяжемся с вами и ответим на все вопросы</h3>
 				<input type="text" placeholder="Введите имя">
@@ -616,8 +616,8 @@
 
 	<div class="popup popup-video">
 		<div class="popup__content">
-			<button class="popup__close"><p>&#735;</p></button>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/xc2TsRwqjds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<button class="popup__close">&#735;</button>
+			<iframe src="https://www.youtube.com/embed/xc2TsRwqjds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -651,7 +651,7 @@
 					let element = event.target;
 
 					if (element.className == 'popup__close' || element.innerHTML == '˟') {
-						let popup = event.path[3];
+						let popup = event.path[2];
 						console.log(popup);
 						popup.style.display = 'none';
 					}
