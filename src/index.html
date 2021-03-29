@@ -607,7 +607,6 @@
 				<h3>Оставьте заявку мы свяжемся с вами и ответим на все вопросы</h3>
 				<input type="text" placeholder="Введите имя">
 				<input type="tel" placeholder="Введите телефон">
-				<input type="text" placeholder="С Bluetooth-пультом">
 				<button>Оставить заявку</button>
 				<span>Перезвоним в течение 10 минут</span>
 			</form>
@@ -617,7 +616,7 @@
 	<div class="popup popup-video">
 		<div class="popup__content">
 			<button class="popup__close">&#735;</button>
-			<iframe src="https://www.youtube.com/embed/xc2TsRwqjds" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/xc2TsRwqjds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -651,7 +650,7 @@
 					let element = event.target;
 
 					if (element.className == 'popup__close' || element.innerHTML == '˟') {
-						let popup = event.path[2];
+						let popup = (event.composedPath && event.composedPath())[2];
 						console.log(popup);
 						popup.style.display = 'none';
 					}
