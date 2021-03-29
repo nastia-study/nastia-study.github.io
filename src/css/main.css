@@ -1,0 +1,881 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr-black';
+  src: url('../fonts/HelveticaNeueCyr-Black.eot');
+  src: url('../fonts/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-bold';
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-light';
+  src: url('../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  padding: 100px 0 85px;
+}
+.section-header_light {
+  font-size: 26px;
+  font-family: 'HelveticaNeueCyr-black', sans-serif;
+  color: white;
+}
+.section-header_dark {
+  font-size: 26px;
+  font-family: 'HelveticaNeueCyr-black', sans-serif;
+  color: black;
+}
+hr {
+  margin: 0;
+  border-top: 3px solid #e8e8e0;
+}
+button {
+  padding: 20px 25px;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid #75a024;
+  border-radius: 5px;
+  color: white;
+  background-color: #94ca2d;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+}
+button:focus {
+  outline: none;
+}
+.main {
+  background: url(../img/main/main-bg.jpg) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.main__header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.main__header .main__logo {
+  margin: 17px 0;
+}
+.main__header .main__tagline p {
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main__header .main__logo,
+.main__header .main__tagline,
+.main__header .main__callback {
+  display: inline-block;
+}
+.main__header .main__callback {
+  right: 0;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main__header .main__callback a {
+  color: white;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+  font-size: 19px;
+}
+.main__header .main__callback p {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #94ca2d;
+}
+.main__header .callback-btn:hover {
+  cursor: pointer;
+  color: #75a024 !important;
+}
+.main__content {
+  padding-top: 100px;
+}
+.main__content .main__offer {
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+}
+.main__content .main__offer p {
+  font-size: 25px;
+}
+.main__content .main__offer span {
+  font-size: 20px;
+}
+.main__content button {
+  display: block;
+  margin: 25px 0 35px;
+  font-size: 14px;
+}
+.main__content .main__dino {
+  position: relative;
+  top: 100px;
+  transform: translateX(-30%);
+}
+.descr {
+  background-color: #f8f8f0;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.descr__text {
+  margin: 40px 0;
+  max-width: 580px;
+  font-size: 14px;
+}
+.descr__complectation {
+  position: relative;
+  display: inline-block;
+  min-height: 190px;
+  vertical-align: top;
+}
+.descr__complectation h5 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.descr__complectation ul {
+  padding: 0;
+  list-style: none;
+}
+.descr__complectation .descr__price {
+  font-weight: 700;
+}
+.descr__complectation .descr__price strong {
+  color: #b81818;
+}
+.descr #first-complectation {
+  margin-right: 55px;
+}
+.descr #first-complectation .descr__price {
+  position: absolute;
+  bottom: 0;
+}
+.descr button {
+  margin-top: 40px;
+}
+.ads {
+  position: relative;
+  background-color: #fcfcf6;
+}
+.ads__block {
+  margin-bottom: 90px;
+}
+.ads__block h4 {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 20px;
+  font-size: 19px;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+}
+.ads__block h4::before {
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+}
+.ads__block #ads-header-1::before {
+  content: url(../img/ads/icon1.png);
+}
+.ads__block #ads-header-2::before {
+  content: url(../img/ads/icon2.png);
+}
+.ads__block p {
+  font-size: 15px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.ads__block .ads__text-block {
+  max-width: 400px;
+  height: 100%;
+  padding-top: 50px;
+}
+.ads__block .ads__text-block img {
+  display: inline-block;
+  margin-left: -45px;
+}
+.ads__decor {
+  position: absolute;
+}
+.ads .decor-1 {
+  right: 0;
+  transform: translate(-200px, 220px);
+}
+.ads .decor-2 {
+  transform: translate(30px, 190px);
+}
+.order {
+  background: url(../img/order/background.jpg) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.order__offer h3 {
+  font-family: 'HelveticaNeueCyr-black', sans-serif;
+  font-size: 30px;
+}
+.order__offer-info {
+  margin: 30px 0 40px;
+  padding: 8px 0 0 20px;
+  width: 90%;
+  height: 60px;
+  font-size: 15px;
+  clip-path: polygon(0% 0%, 97% 0, 100% 50%, 97% 100%, 0% 100%);
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+  background-color: #18a7d0;
+}
+.order__offer .order__advantage {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 75px;
+  max-width: 220px;
+}
+.order__offer .order__advantage img,
+.order__offer .order__advantage p {
+  display: inline-block;
+}
+.order__offer .order__advantage p {
+  max-width: 170px;
+  line-height: 1.2;
+}
+.order__offer .order__advantage img {
+  vertical-align: top;
+  margin-right: 5px;
+}
+.order__form {
+  padding: 35px 50px;
+  max-width: 400px;
+  text-align: center;
+  background-color: black;
+  border: 3px solid #18a7d0;
+}
+.order__form h4 {
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+}
+.order__form input {
+  margin-bottom: 10px;
+  padding: 20px 25px;
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+  border: 2px solid white;
+  background-color: transparent;
+}
+.order__form input::placeholder {
+  color: white;
+  font-size: 17px;
+}
+.order__form button {
+  width: 100%;
+}
+.order__form span {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+#ads2 h4 {
+  display: inline-block;
+  margin: 30px 0 20px;
+  font-size: 19px;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+}
+#ads2 h4::before {
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+}
+#ads2 #ads-header-3::before {
+  content: url(../img/ads/icon3.png);
+}
+#ads2 #ads-header-4::before {
+  content: url(../img/ads/icon4.png);
+}
+.working {
+  position: relative;
+  background: url(../img/how-works/background.png) center no-repeat;
+  background-size: cover;
+}
+.working__instruction {
+  text-align: center;
+}
+.working__instruction h2 {
+  margin-bottom: 70px;
+}
+.working__instruction .instruction__img {
+  min-height: 150px;
+}
+.working__instruction .instruction__count {
+  position: relative;
+  margin: -20px auto;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+}
+.working__instruction .instruction__count p {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.working__instruction .instruction__text {
+  margin-top: 30px;
+}
+.working__compability h2 {
+  margin: 190px 0 70px;
+}
+.working__compability .phone-model {
+  text-align: center;
+  font-size: 17px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.working__compability .phone-model .phone-name {
+  margin-top: 15px;
+}
+.working__compability .compability__img {
+  position: relative;
+  height: 100%;
+  font-size: 17px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.working__compability .compability__img img {
+  width: 100%;
+}
+.working__compability .compability__img p {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+.working__decor {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.video {
+  background: url(../img/video/background.jpg) center no-repeat;
+  background-size: cover;
+}
+.video h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.video .play-btn {
+  text-align: center;
+}
+.video .play-btn .video__button {
+  display: inline-block;
+  padding: 20px;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+.video .play-btn p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+  color: white;
+}
+.games {
+  background-color: #fcfcf6;
+}
+.games__market-icons,
+.games h2 {
+  text-align: center;
+}
+.games__market-icons {
+  margin: 50px 0 60px;
+}
+.games__block .games__img {
+  margin-bottom: 30px;
+  min-height: 160px;
+}
+.games__block h4 {
+  font-size: 20px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.games__block p {
+  font-size: 13px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.games button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin-top: 40px;
+}
+.reviews {
+  position: relative;
+  background-color: #f8f8f0;
+}
+.reviews__decor {
+  position: absolute;
+  right: 70px;
+  top: 110px;
+  z-index: 2;
+}
+.reviews h2 {
+  margin-bottom: 90px;
+  text-align: center;
+}
+.reviews__block {
+  margin-bottom: 20px;
+  padding: 30px 30px 55px;
+  background-color: white;
+  border: 1px solid #18a7d0;
+}
+.reviews__block .client-info img {
+  margin: 0 25px 25px 0;
+}
+.reviews__block .client-info p {
+  display: inline-block;
+  max-width: 180px;
+  font-size: 15px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.reviews__block .client-review {
+  font-size: 12px;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+}
+.organization {
+  text-align: center;
+  background: #fcfcf6;
+}
+.organization h2 {
+  margin-bottom: 70px;
+}
+.organization__block {
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+  font-size: 14px;
+}
+.organization__block .organization__img {
+  margin-bottom: 20px;
+  min-height: 130px;
+}
+.questions {
+  text-align: center;
+  background: #fcfcf6;
+}
+.questions__offer {
+  display: inline-block;
+  font-family: 'HelveticaNeueCyr-medium', sans-serif;
+  font-size: 15px;
+  border-bottom: 1px dotted black;
+}
+.questions__offer:hover {
+  cursor: pointer;
+}
+footer.main__header {
+  color: #fff;
+  background-color: #000;
+}
+.popup {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.popup__form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  display: inline-block;
+  padding: 40px 60px;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 3px solid #18a7d0;
+  border-radius: 4px;
+}
+.popup__form h3 {
+  margin-bottom: 30px;
+}
+.popup__form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: black;
+  border: 1px solid white;
+}
+.popup__form input::placeholder {
+  padding: 20px 25px;
+  font-size: 16px;
+  color: white;
+}
+.popup__form form button {
+  width: 100%;
+}
+.popup__form span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.popup__form .popup__close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  font-size: 30px;
+  color: #18a7d0;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+  border: 4px solid #18a7d0;
+  border-radius: 50%;
+  background-color: #000;
+}
+.popup__form .popup__close p {
+  height: 100%;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.popup-video {
+  display: block;
+}
+.popup-video .popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-video .popup__content .popup__close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  font-size: 35px;
+  color: #18a7d0;
+  font-family: 'HelveticaNeueCyr-bold', sans-serif;
+  background-color: #000;
+}
+.popup-video .popup__content .popup__close p {
+  height: 100%;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+@media (max-width: 1399px) {
+  .descr__img img {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .main__dino {
+    top: 50px !important;
+    transform: translateX(-45%) !important;
+  }
+  .descr img {
+    width: 110%;
+    transform: translate(-70px, 230px);
+  }
+  .ads .decor-1 {
+    transform: translate(-40px, 220px);
+  }
+  .reviews__decor {
+    right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .main__dino {
+    display: none;
+  }
+  .main img[alt="VR Box 2"] {
+    transform: translate(78%, -100px);
+  }
+  .descr__img {
+    position: relative;
+    min-height: 250px;
+  }
+  .descr__img img {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    transform: translate(0, 0);
+  }
+  .ads__block:last-child .ads__img img {
+    width: 110%;
+  }
+  .order {
+    text-align: center;
+  }
+  .order__offer-info {
+    width: 65%;
+    margin: 30px auto 40px;
+    text-align: left;
+  }
+  .order__advantage {
+    text-align: left;
+  }
+  .order__form {
+    margin: 40px auto 0;
+  }
+  #ads2 img[src="img/ads/3.png"] {
+    width: 100%;
+    transform: translateX(-30px);
+  }
+  #ads2 .ads__text-block {
+    padding-top: 0;
+  }
+  .working__instruction .instruction__text {
+    margin-bottom: 50px;
+  }
+  .working__compability .working__header-2 {
+    margin: 100px 0 50px;
+  }
+  .working__compability .compability__img {
+    margin-top: 60px;
+  }
+  .working__compability .compability__img p {
+    position: relative;
+    margin-top: 20px;
+  }
+  .working__decor {
+    display: none;
+  }
+  .games .games__block {
+    margin-bottom: 50px;
+  }
+  .games__img {
+    text-align: center;
+  }
+  .reviews__decor {
+    display: none;
+  }
+  .organization__block {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .main__content {
+    padding: 60px 0 0;
+  }
+  .main__dino {
+    display: none;
+  }
+  .main__dino img {
+    width: 270px;
+    height: 200px;
+  }
+  .main img[alt="VR Box 2"] {
+    transform: translate(90%, -100px);
+    width: 250px;
+    height: 130px;
+  }
+  .main button {
+    margin: 50px 0 35px;
+  }
+  .descr button {
+    position: relative;
+    top: 270px;
+    z-index: 100;
+  }
+  .descr__img {
+    position: relative;
+    top: -90px;
+  }
+  .descr__img img {
+    right: 10%;
+    width: 70%;
+  }
+  .ads__decor {
+    display: none;
+  }
+  .ads__block {
+    margin-bottom: 0;
+  }
+  .ads__block:nth-child(2n) .ads__img {
+    position: relative;
+    top: -70%;
+  }
+  .ads__block:nth-child(2n) .ads__text-block {
+    position: relative;
+    top: 130%;
+  }
+  .ads__text-block {
+    margin: 0 auto;
+  }
+  .ads__img img {
+    width: 100% !important;
+  }
+  .order__offer-info {
+    width: 90%;
+  }
+  #ads2 .ads__block:nth-child(2n) .ads__img {
+    top: -50%;
+  }
+  #ads2 .ads__block:nth-child(2n) .ads__text-block {
+    top: 180%;
+  }
+  .working {
+    background: #f8f8f0;
+  }
+  .working__header-2 {
+    margin: 50px 0 50px !important;
+  }
+}
+@media (max-width: 575px) {
+  .main__header {
+    min-height: 140px;
+  }
+  .main__header .main__header-left {
+    width: 400px;
+    margin: 7px auto;
+  }
+  .main__header .main__callback {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .main__header .main__callback a,
+  .main__header .main__callback p {
+    display: inline-block;
+  }
+  .main__header .main__callback a {
+    margin-right: 30px;
+  }
+  .main__content {
+    text-align: center;
+  }
+  .main__content img[alt="VR Box 2"] {
+    transform: translate(0, 0);
+  }
+  .main button {
+    margin: 50px auto 35px;
+  }
+  .ads__text-block {
+    max-width: 300px !important;
+  }
+  .ads__block:nth-child(2n) .ads__img {
+    top: -120%;
+  }
+  .ads__block:nth-child(2n) .ads__text-block {
+    top: 80%;
+  }
+  .order__offer-info {
+    padding: 10px 5px 10px 15px;
+    height: auto;
+  }
+  .order__offer-info p {
+    margin: 0;
+  }
+  #ads2 .ads__block:nth-child(2n) .ads__img {
+    top: -70%;
+  }
+  #ads2 .ads__block:nth-child(2n) .ads__text-block {
+    top: 135%;
+  }
+  .working__compability .phone-model img {
+    width: 100%;
+  }
+  .games__img img {
+    width: 100%;
+  }
+  .reviews img {
+    margin-right: 10px !important;
+    height: 65px;
+  }
+  .popup__form {
+    padding: 40px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 420px) {
+  .main__logo img {
+    width: 57px;
+    height: 28px;
+  }
+  .main__tagline p {
+    font-size: 13px;
+  }
+  .main__callback {
+    margin-top: 15px;
+  }
+  .main__offer p {
+    font-size: 20px !important;
+  }
+  .ads__text-block h4::before {
+    display: none;
+  }
+  .ads__block:nth-child(2n) .ads__img {
+    top: -160%;
+  }
+  .ads__block:nth-child(2n) .ads__text-block {
+    top: 55%;
+  }
+  #ads2 .ads__text-block h4::before {
+    display: none;
+  }
+  #ads2 .ads__block:nth-child(2n) .ads__img {
+    top: -90%;
+  }
+  #ads2 .ads__block:nth-child(2n) .ads__text-block {
+    top: 110%;
+  }
+  .games__img {
+    margin-bottom: 0 !important;
+  }
+  .reviews__block {
+    padding: 20px 20px 30px;
+  }
+  .reviews img {
+    height: 60px;
+  }
+  .reviews p {
+    max-width: 130px !important;
+    font-size: 13px;
+  }
+  .popup__form {
+    max-width: 250px;
+  }
+  .popup__form h3 {
+    font-size: 17px;
+  }
+  .popup__form input {
+    height: 30px;
+  }
+  .popup__form input::placeholder {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .popup__form button {
+    padding: 20px 15px;
+    font-size: 13px;
+  }
+  .popup__form span {
+    font-size: 10px;
+  }
+}
