@@ -390,6 +390,9 @@ button:focus {
 .video .play-btn {
   text-align: center;
 }
+.video .play-btn:hover {
+  cursor: pointer;
+}
 .video .play-btn .video__button {
   display: inline-block;
   padding: 20px;
@@ -561,7 +564,7 @@ footer.main__header {
   margin-bottom: 0;
 }
 .popup-video {
-  display: block;
+  display: none;
 }
 .popup-video .popup__content {
   position: absolute;
