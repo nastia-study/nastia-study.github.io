@@ -748,6 +748,13 @@ footer.main__header {
   .working__header-2 {
     margin: 50px 0 50px !important;
   }
+  .popup-video {
+    height: auto !important;
+  }
+  .popup-video iframe {
+    width: 80vw !important;
+    height: auto;
+  }
 }
 @media (max-width: 575px) {
   .main__header {
