@@ -616,6 +616,7 @@
 
 	<div class="popup popup-video">
 		<div class="popup__content">
+			<button class="popup__close"><p>&#735;</p></button>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/xc2TsRwqjds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
@@ -624,13 +625,19 @@
 
 	<script>
 		let callbackBtn = document.querySelectorAll('.callback-btn'),
-						questionsBtn = document.querySelector('.questions__offer')
+						questionsBtn = document.querySelector('.questions__offer'),
+						videoBtn = document.querySelector('.video__button');
 
 		callbackBtn.forEach(function(item, index, btns) {
 			btns[index].addEventListener('click', function() {
 				let popup = document.querySelector('.popup-callback');
 				popup.style.display = 'block';
 			})
+		})
+
+		videoBtn.addEventListener('click', function() {
+			let popup = document.querySelector('.popup-video');
+			popup.style.display = 'block';
 		})
 
 		questionsBtn.addEventListener('click', function() {
