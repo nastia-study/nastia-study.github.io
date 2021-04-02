@@ -562,11 +562,11 @@
 		<!-- <div class="container"> -->
 			<div class="popup__form">
 				<button class="popup__close">&#735;</button>
-				<form action="#">
+				<form action="mailer/smart.php" method="POST">
 					<h3>Введите ваши данные и нажмите заказать</h3>
-					<input type="text" placeholder="Введите имя">
-					<input type="tel" placeholder="Введите телефон">
-					<button>Заказать звонок</button>
+					<input type="text" name="user_name" placeholder="Введите имя">
+					<input type="tel" name="user_phone" placeholder="Введите телефон">
+					<button type="submit">Заказать звонок</button>
 					<span>Перезвоним в течение 10 минут</span>
 				</form>
 			</div>
@@ -576,7 +576,7 @@
 	<div class="popup popup-order">
 		<div class="popup__form">
 			<button class="popup__close">&#735;</button>
-			<form action="#">
+			<form action="mailer/smart.php" method="POST">
 				<h3>Введите ваши данные и нажмите заказать</h3>
 				<input type="text" placeholder="Введите имя">
 				<input type="tel" placeholder="Введите телефон">
@@ -589,7 +589,7 @@
 	<div class="popup popup-complectation">
 		<div class="popup__form">
 			<button class="popup__close">&#735;</button>
-			<form action="#">
+			<form action="mailer/smart.php" method="POST">
 				<h3>Введите ваши данные и нажмите заказать</h3>
 				<input type="text" placeholder="Введите имя">
 				<input type="tel" placeholder="Введите телефон">
@@ -603,7 +603,7 @@
 	<div class="popup popup-questions">
 		<div class="popup__form">
 			<button class="popup__close">&#735;</button>
-			<form action="#">
+			<form action="mailer/smart.php" method="POST">
 				<h3>Оставьте заявку мы свяжемся с вами и ответим на все вопросы</h3>
 				<input type="text" placeholder="Введите имя">
 				<input type="tel" placeholder="Введите телефон">
