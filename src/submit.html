@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<main class="main submit">
+		<div class="main__header">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-5 col-sm-7 offset-sm-0 col-10 offset-1">
+						<div class="main__header-left">
+							<div class="main__logo"><img src="img/main/main-logo.png" alt="logo"></div>
+							<div class="main__tagline">
+								<p>Производство и продажа VR очков. <br>
+								Доставка по всей России. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="offset-lg-4 col-lg-3 offset-sm-1 col-sm-4 col-12">
+						<div class="main__callback">
+							<a href="tel:+79104551703" class="main__tel">+79104551703</a>
+							<p class="callback-btn">Заказать звонок</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="main__content">
+			<div class="container">
+				<h3>Спасибо за заявку</h3>
+				<div class="main__text">
+					Мы свяжемся с вами и уточним все детали заявки. Если у вас срочный вопрос, позвоните по тел: <a href="tel:+79104551303">+79104551303</a>
+				</div>
+				<button id="back">Вернуться на сайт</button>
+			</div>
+		</div>
+	</main>
+
+	<script>
+		btn = document.querySelector('#back');
+		btn.addEventListener('click', function() {
+			document.location.href="index.html";
+		})
+		
+	</script>
+
+	
+</body>
+</html>
